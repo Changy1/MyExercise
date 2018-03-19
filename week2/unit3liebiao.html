@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            ul{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                background: #C03928;
+                color: #FFF;
+                list-style: none;
+                padding: 15px;
+                margin: 5px 0;
+                text-indent: 35px;
+                box-sizing: border-box;        /*让列表横着排列*/
+                width: 200px;
+                float: left;
+                margin-right: 10px;
+                margin-right: 4%;
+                width: 22%;
+                min-width: 120px;              /*列表能容忍的最小的尺寸*/
+            }
+            li:first-child{
+                background: #C0392B url() no-repeat 10px 50%;
+            }
+            li:nth-child(2){
+                background: #e74c3c url() no-repeat 10px 50%;
+            }
+            li:nth-child(3){
+                background: #C03928 url() no-repeat 10px 50%;
+            }
+            li:last-child{
+                background: #e74c3c url() no-repeat 10px 50%;
+                margin-right: 0;
+            }
+            li:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </body>                      
+</html>
