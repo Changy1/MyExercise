@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的第一个网站</title>
+        <style type="text/css">
+            body{
+                background-color: #dad2d2a9;
+            }
+            h1{
+                font-family: "Lucida Console", Monaco, monospace;
+                text-indent: 5%;
+                font-size: 50px;
+                padding-left: 50px;
+            }
+            table{
+                width:100%;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                background-color: rgba(192, 189, 189, 0.938);
+            }
+            td:hover{
+                background-color: #f1f1f1;
+            }
+            .td1{
+                width: 17.5%;
+            }
+            td{
+                width:21%;
+            }
+            .c2,.d2,.e2,.f2{
+                text-decoration: none;
+                color: rgb(0, 140, 255);
+            }
+            .c3,.e3,.d3,.f3{
+                position: absolute;                            /*相对于父元素进行定位*/
+                display: none;                                 /*这个元素不会被显示*/
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                width:20.65%;
+            }
+            .c3 a,.e3 a,.d3 a,.f3 a{
+                display: block;                                /*把行变成块元素*/
+                padding: 12px 16px;                            /*内边距*/
+                color:rgb(0, 140, 255);;
+                text-decoration: none;
+            }
+            .c3 a:hover,.e3 a:hover,.d3 a:hover,.f3 a:hover{
+                background-color:#f1f1f1;
+            }
+            .c1:hover .c3,.d1:hover .d3,.e1:hover .e3,.f1:hover .f3{
+                display: block;                                    
+            }
+            span{
+                font-size: 20px;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                color: rgb(0, 140, 255);
+                /*font-weight: normal;*/
+            }
+            .zhong{
+                margin-left:30px;
+                margin-top:30px;
+                margin-right:40px;
+            }
+            .bao{
+                width:14%;
+                display: block;
+                background: #fff;
+                margin: 0 0 20px 0;
+                box-shadow: 0 1px 1px 0;
+            }
+            .wenzi{
+                padding: 4px;
+                margin:0;
+                overflow: hidden;
+            }
+            .wenzi a{
+                background-color: rgb(223, 223, 223);
+                text-decoration: none;
+                line-height: 20px;
+                display: block;
+                padding: 4px;
+                border-bottom: 1px solid #efefef;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                color: rgb(0, 140, 255);
+            }
+            .wenzi a:hover{
+                background-color:rgba(192, 189, 189, 0.938); 
+            }
+            .div_child,.bao{
+                display: inline-block;     /*DIV横向排列必须把大DIV内所有DIV选择 不能直接选择大DIV 选择大DIV就是给大DIV排列*/
+            }
+            .div_child{
+                margin-left: 30px;
+                width: 80%;
+                overflow-x: scroll;      /*如果文本超出宽度 提供滚动机制，如果是hidden则不显示超出部分*/
+                white-space: nowrap;     /*文本不会换行 直到遇到br为止*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Over The Hills<span>&nbsp;&nbsp;&nbsp;&nbsp;I happen to be on your way.</span></h1>
+        <table border="0" cellspacing="0">
+            <tr>
+                <td class="td1"></td>
+                <td class="c1">
+                    <a class="c2" href="b">Moutain</a>
+                    <div class="c3">
+                        <a href="5">Domestic</a>
+                        <a href="6">Abroad</a>
+                    </div>
+                </td>
+                <td class="d1">
+                    <a class="d2" href="c">River</a>
+                    <div class="d3">
+                        <a href="8">Domestic</a>
+                        <a href="9">Abroad</a>
+                    </div>
+                </td>
+                <td class="e1">
+                    <a class="e2" href="d">The sea</a>
+                    <div class="e3">
+                        <a href="2">Domestic</a>
+                        <a href="3">Abroad</a>
+                    </div>
+                </td>
+                <td class="f1">
+                    <a class="f2" href="e">Scenery</a>
+                    <div class="f3">
+                        <a href="32">Domestic</a>
+                        <a href="32">Abroad</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="zhong">   
+            <div class="bao">    <!--创建此div是为了让wenzi的padding显示出来  bao颜色白色  wenzi灰色会显示-->
+                <div class="wenzi">
+                    <a href="222">Mount Tai</a>
+                    <a href="222">Mount Heng</a>
+                    <a href="222">Heng Shan</a>
+                    <a href="222">Mount Song</a>
+                    <a href="222">Mount Hua</a>
+                    <a href="222">Mount Huangshan</a>
+                    <a href="222">number 3</a>
+                    <a href="222">number 3</a>
+                    <a href="222">number 3</a>
+                    <a href="222">number 3</a>
+                    <a href="222">number 3</a>
+                </div>
+            </div>
+            <div class="div_child">
+                <div>
+                <img src="1122.png">
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
