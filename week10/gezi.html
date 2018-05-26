@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>格子布局</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+        section{
+            width: 100%;
+            min-width: 500px;
+        }
+        article{
+            width:50%;
+            box-sizing: border-box;
+            padding: 20px;
+            float: left;
+            text-align: center;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+            border-right: 1px solid rgba(0,0,0,.2);
+        }
+        article:nth-child(odd){
+            border-left: 1px solid rgba(0,0,0,.2);
+        }
+        article:nth-child(1){
+            border-top: 1px solid rgba(0,0,0,.2);
+        }
+        article:nth-child(2){
+            border-top: 1px solid rgba(0,0,0,.2);
+        }
+        article h1{
+            font-size: 32px;
+            margin: 10px 0;
+            color: #666;
+        }
+        article p{
+            font-size: 15px;
+            margin-bottom: 0 0 10px;
+            color: #999;
+        }
+        </style>
+    </head>
+    <body>
+        <section>
+            <article>
+                <h1>Ulysses</h1>
+                <p>Soaring through the galaxies</p>
+                <img>
+            </article>
+            <article>
+                <h1>Dallas</h1>
+                <p>Rollin' down to Dallas</p>
+                <img>
+            </article>
+            <article>
+                <h1>Mckay</h1>
+                <p>Mckay and his best friend</p>
+                <img>
+            </article>
+            <article>
+                <h1>Thunder</h1>
+                <p>Thundercats on the move</p>
+                <img>
+            </article>
+        </section>
+    </body>
+</html>

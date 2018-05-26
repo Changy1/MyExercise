@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>多列等高布局</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #container{
+                width: 100%;
+                overflow: hidden;
+            }
+            .col{
+                width: 33.3%;
+                float: left;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 20px;
+                color: #FFF;
+                background: #2980B9;
+            }
+            .col:nth-child(2){
+                background: #3498DB;
+            }
+            .col:nth-child(3){
+                background: #67aeef;
+            }
+            .col{
+                padding-bottom: 500px;
+                margin-bottom: -500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="col">
+                <img>
+                <h1>Trend</h1>
+                <p>The tool refers to periodic trends for collecting and analyzing weak signals and trends in chemistry</p>
+            </div>
+            <div class="col">
+                <img>
+                <h1>User</h1>
+                <p>User namespaces are now fully implemented as of document is obsolete</p>
+            </div>
+            <div class="col">
+                <img>
+                <h1>Picture</h1>
+                <p>Taking good pictures is something anyone can do with any camera,if you practice enough and avoid some common mistakes...</p>
+            </div>
+        </div>
+    </body>
+</html>

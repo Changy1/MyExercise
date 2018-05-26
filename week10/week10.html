@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My zhihu</title>
+        <style type="text/css">
+        body{
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+            margin: 0;
+            background: rgb(246,246,246);
+            }
+        .top{
+            padding-top: 7px;
+            box-shadow: 0 2px 3px rgba(26,26,26,.2);
+            position: relative;
+            background: #fff;
+        }
+        .nabar{
+            width: 1000px;
+            height: 43px;
+            margin: 0 auto;
+        }
+        .nabar a{
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nabar .one{
+            color: black;
+        }
+        .nabar .two{
+            color: #8590a6;
+        }
+        .nabar .two:hover{
+            color: #175199;
+        }
+        .nabar a,.nabar img{
+            vertical-align: middle;
+        }
+        .search{
+            display: inline;
+            margin-left: 25px;
+        }
+        .input1{
+            background-color: #f6f6f6;
+            width:300px;
+            height: 30px;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        .input2{
+            height: 34px;
+            margin-left: 15px;
+            background: #0084ff;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+            font-size: 15px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .glass{
+            background-image: url(fangda.png);
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            margin-left: -35px;
+            margin-top: 7px;
+        }
+        .right1{
+            margin-right: 30px;
+            margin-top: 3px;
+            float: right;
+        }
+        .right2{
+            margin-right: 30px;
+            margin-top: 5px;
+            float: right;
+        }
+        .right3{
+            float: right;
+            margin-top: 3px;
+        }
+        .below{
+            
+            padding: 10px;
+            position: relative;
+        }
+        .below2{
+            width: 1000px;
+            height: 1000px;
+            margin:0 auto;
+        }
+        .sidebar{
+            width: 695px;
+            height: 1000px;
+            margin-right: 10px;
+            float: left;
+        }
+        .main{
+            width:295px;
+            height: 1000px;
+            position: absolute;
+            margin-left: 705px;
+        }
+        .daohang{
+            background-color: #fff;
+            width: 695px;
+            height: 41px;
+            padding-top: 17px;
+            box-shadow: 0 2px 3px rgba(26,26,26,.2);
+        }
+        .tiwen{
+            background-color: #fff;
+            width: 695px;
+            height: 215px;
+            margin-top: 10px;
+            box-shadow: 0 2px 3px rgba(26,26,26,.2);
+            overflow: hidden;
+        }
+        .live{
+            height: 175px;
+            background-color: #fff;
+            box-shadow: 0 2px 3px rgba(26,26,26,.2);
+        }
+        .daohang .a1{
+            font-size: 16px;
+            margin-left: 55px;
+            text-decoration: none;
+            color: #000;
+        }
+        .daohang .a1:hover{
+            color: #175199;
+        }
+        .tu1{
+            background-image: url(111.png);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 2px;
+        }
+        .tu2{
+            background-image: url(222.png);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 2px;
+        }
+        .tu3{
+            background-image: url(333.png);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 2px;
+        }
+        .tu4{
+            background-image: url(444.png);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 1px;
+        }
+        .cao{
+            float:right;
+            margin-right: 20px;
+            color: #8590a6;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .cao:hover{
+            color: #175199;
+        }
+        .kuang{
+            display: inline-block;
+            width: 30%;
+            height: 45%;
+        }
+        .shang{
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 17px;
+        }
+        .xia{
+            position: absolute;
+            margin-left: 34px;
+            margin-top: 55px;
+        }
+        .xia1{
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 55px;
+        }
+        .xia a,.xia1 a{
+            color: #8590a6;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .L1:hover{
+            color: rgb(255,207,0);
+        }
+        .L2:hover{
+            color: rgb(67,212,128);
+        }
+        .L3:hover{
+            color: rgb(0,132,255);
+        }
+        .L4:hover{
+            color: rgb(15,136,235);
+        }
+        .L5:hover{
+            color: rgb(84,120,240);
+        }
+        .xing{
+            margin-top: 10px;
+            height: 295px;
+            background-color: #fff;
+            box-shadow: 0 2px 3px rgba(26,26,26,.2);
+            box-sizing: border-box;
+            padding-top: 10px;
+            position: relative;
+        }
+        .xing a{
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            color: #8590a6;
+            line-height: 39px;
+            padding-left: 48px;
+        }
+        .xing a:hover{
+            background: #f6f6f6;
+        }
+        .xing span{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            margin-left: 20px;
+            margin-top: 9px;
+        }
+        .qi1{
+            background-image: url(xingxing.png);
+        }
+        .qi2{
+            background-image: url(wenhao.png);
+        }
+        .qi3{
+            background-image: url(tianjia.png);
+        }
+        .qi4{
+            background-image: url(diandian.png);
+        }
+        .qi5{
+            background-image: url(huihua.png);
+        }
+        .qi6{
+            background-image: url(C.png);
+        }
+        .qi7{
+            background-image: url(B.png);
+        }
+        .baokuo{
+            margin-left: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <div class="top">
+                <div class="nabar">
+                    <img src="logo.svg">
+                    <a href="11" class="one">首页</a>
+                    <a href="22" class="two">发现</a>
+                    <a href="33" class="two">话题</a>
+                    <div class="search">
+                        <input class="input1" name="sousuo" type="text" value="" placeholder="搜索你感兴趣的内容...">
+                        <span class="glass"></span>
+                        <span>
+                            <input class="input2" name="zhihu" type="button" value="提问">
+                        </span>
+                    </div>
+                    <img src="xiong.png" class="right3">
+                    <img src="xiaoxi.png" class="right1">
+                    <img src="tixing.png" class="right2">
+                </div>
+            </div>
+            <div class="below">
+                <div class="below2">
+                    <div class="sidebar">
+                        <div class="daohang">
+                            <a class="a1" href="22222"><span class="tu1"></span>提问</a>
+                            <a class="a1" href="33333"><span class="tu2"></span>回答</a>
+                            <a class="a1" href="44444"><span class="tu3"></span>写文章</a>
+                            <a class="a1" href="55555"><span class="tu4"></span>写想法</a>
+                            <a class="cao" href="323">草稿</a>
+                        </div>
+                        <div class="tiwen">
+                            <div class="baokuo">
+                            <div>
+                                <a>热门内容,来自：科技</a>
+                            </div>
+                            <div>
+                                <img><a>地球人</a><a>你要不要了解一下</a>
+                            </div>
+                            <div>
+                                <h1>怎样评价宇宙社会学？</h1>
+                                <img><p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行与林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点儿声音，连呼吸都必须小心翼翼......他必须小心，因为林中到处都有与他一样潜行的猎人，如果他发现了别的生命，不管是不是猎人，不管是天使还是魔鬼，不管是娇嫩的婴儿还是步履蹒跚的老人，也不管是天仙般的少女还是天神般的男孩，能做的只有一件事：开枪消灭之？在这片森林中，他人就是地狱，就是永恒的威胁，任何暴露自己存在的生命都将很快被消灭，这就是宇宙文明的图景，这就是对费米悖论的解释。</p>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tiwen">
+                            <div class="baokuo">
+                            <div>
+                                <a>热门内容,来自：科技</a>
+                            </div>
+                            <div>
+                                <img><a>地球人</a><a>你要不要了解一下</a>
+                            </div>
+                            <div>
+                                <h1>怎样评价宇宙社会学？</h1>
+                                <img><p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行与林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点儿声音，连呼吸都必须小心翼翼......他必须小心，因为林中到处都有与他一样潜行的猎人，如果他发现了别的生命，不管是不是猎人，不管是天使还是魔鬼，不管是娇嫩的婴儿还是步履蹒跚的老人，也不管是天仙般的少女还是天神般的男孩，能做的只有一件事：开枪消灭之？在这片森林中，他人就是地狱，就是永恒的威胁，任何暴露自己存在的生命都将很快被消灭，这就是宇宙文明的图景，这就是对费米悖论的解释。</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tiwen">
+                            <div class="baokuo">
+                            <div>
+                                <a>热门内容,来自：科技</a>
+                            </div>
+                            <div>
+                                <img><a>地球人</a><a>你要不要了解一下</a>
+                            </div>
+                            <div>
+                                <h1>怎样评价宇宙社会学？</h1>
+                                <img><p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行与林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点儿声音，连呼吸都必须小心翼翼......他必须小心，因为林中到处都有与他一样潜行的猎人，如果他发现了别的生命，不管是不是猎人，不管是天使还是魔鬼，不管是娇嫩的婴儿还是步履蹒跚的老人，也不管是天仙般的少女还是天神般的男孩，能做的只有一件事：开枪消灭之？在这片森林中，他人就是地狱，就是永恒的威胁，任何暴露自己存在的生命都将很快被消灭，这就是宇宙文明的图景，这就是对费米悖论的解释。</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="live">
+                            <div class="kuang">
+                                <div class="shang">
+                                    <img src="shandian.png">
+                                </div>
+                                <div class="xia">
+                                    <a href="aaa" class="L1">Live</a>
+                                </div>
+                            </div>
+                            <div class="kuang">
+                                <div class="shang">
+                                    <img src="shu.png">
+                                </div>
+                                <div class="xia">
+                                    <a href="bbb" class="L2">书店</a>
+                                </div>
+                            </div>
+                            <div class="kuang">
+                                <div class="shang">
+                                    <img src="hua.png">
+                                </div>    
+                                <div class="xia">
+                                    <a href="ccc" class="L3">圆桌</a>
+                                </div>
+                            </div>
+                            <div class="kuang">
+                                <div class="shang">
+                                    <img src="qianbi.png">
+                                </div>
+                                <div class="xia">
+                                    <a href="ddd" class="L4">专栏</a>
+                                </div>
+                            </div>
+                            <div class="kuang">
+                                <div class="shang">
+                                    <img src="kuang.png">
+                                </div>
+                                <div class="xia1">
+                                    <a href="eee" class="L5">付费查询</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xing">
+                            <span class="qi1"></span><a href="2225">我的收藏</a>
+                            <span class="qi2"></span><a href="2225">我关注的问题</a>
+                            <span class="qi3"></span><a href="2225">我的邀请</a>
+                            <span class="qi4"></span><a href="2225">我的礼券</a>
+                            <span class="qi5"></span><a href="2225">社区服务中心</a>
+                            <span class="qi6"></span><a href="2225">版权服务中心</a>
+                            <span class="qi7"></span><a href="2225">公共编辑状态</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
