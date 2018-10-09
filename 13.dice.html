@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            /* height: 1500px; */
+        }
+        .face {
+            box-sizing: border-box;
+            width: 400px;
+            height: 400px;
+            background: -webkit-radial-gradient(rgb(233, 232, 232),rgb(97, 97, 97));
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .face__point {
+            width: 100px; height: 100px;
+            background: -webkit-radial-gradient(rgb(238, 40, 40), rgb(184, 11, 11));
+            box-shadow: 0px 0px 10px rgb(65, 1, 1) inset;
+            border-radius: 50%;
+        }
+        .face:first-child{
+            justify-content: center;
+            align-items: center;
+        }
+        .face:nth-of-type(2){
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .face:nth-of-type(3){
+            justify-content: space-around;
+        }
+        .face:nth-of-type(3) .face__point:last-child{
+            align-self: flex-end;
+        }
+
+        .face:nth-of-type(4){
+            justify-content: space-around;
+        }
+        .face:nth-of-type(4) .face__point:last-child{
+            align-self: flex-end;
+        }
+        .face:nth-of-type(4) .face__point:nth-of-type(2){
+            align-self: center;
+        }
+
+        .face:nth-of-type(5),
+        .face:nth-of-type(6),
+        .face:nth-of-type(7){
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .face:nth-of-type(5) .face-con,
+        .face:nth-of-type(6) .face-con,
+        .face:nth-of-type(7) .face-con{
+            display: flex;
+            justify-content: space-around;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="face__point"></div>
+    </div>
+    <div class="face">
+        <div class="face__point"></div>
+        <div class="face__point"></div>
+    </div>
+    <div class="face">
+        <div class="face__point"></div>
+        <div class="face__point"></div>
+    </div>
+    <div class="face">
+        <div class="face__point"></div>
+        <div class="face__point"></div>
+        <div class="face__point"></div>
+    </div>
+    <div class="face">
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+    </div>
+    <div class="face">
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+        <div class='face-con'>
+                <div class="face__point"></div>
+        </div>
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+    </div>
+    <div class="face">
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+        <div class='face-con'>
+                <div class="face__point"></div>
+                <div class="face__point"></div>
+        </div>
+    </div>
+</body>
+</html>
