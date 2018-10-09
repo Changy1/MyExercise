@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 800px;
+            height: 400px;
+            background: #fd3;
+        }
+        .son{
+            width: 200px;
+            height: 100px;
+            background: white;
+            box-shadow: 0 0 10px black;
+        }
+        .father{
+            /* 弹性父元素属性 */
+            display: flex;
+            /* flex-direction: row; */              /* 左边排列 */
+            /* flex-direction: row-reverse; */      /* 右边开始排列，这里1会从最右边*/
+            /* flex-direction: column; */           /* 竖方向排列 1从顶部开始 改变主轴的方向 */
+            /* flex-direction: column-reverse; */   /* 竖方向排列，1从底部开始 */
+            /* flex-wrap: wrap; */                  /* 超出换行 */
+            /* flex-wrap: wrap-reverse; */          /* 超出换行，并且第一行在底部开始上往上走 */
+            /* flex-flow: column wrap; */           /* 复合属性，上方两种的  */
+            /* justify-content: flex-start;  */     /* 在主轴方向上面的排列  左对齐 */
+            /* justify-content: flex-end; */        /* 主轴方向上右对齐 */
+            /* justify-content: center; */          /* 挤在中间 */
+            /* justify-content: space-between; */   /* 第一个、最后一个对齐弹性容器的边缘，其余均匀分布 */ 
+            /* justify-content: space-around; */    /* 都是均匀分布，每个盒子的两侧边距一样大 */
+            /* align-items: flex-start; */          /* 当前' 行 '侧轴的对方式，开始位置对齐 */
+            /* align-items: flex-end; */            /* 弹性子元素将会堆栈在弹性容器的侧轴结束位置。 */
+            /* align-items: center; */              /* 弹性子元素将会堆栈在弹性容器的侧轴中间位置。*/
+            /* align-items: stretch; */             /* 弹性子元素将会从侧轴开始到侧轴结束铺满整个高度（宽度） */
+            /* align-items: baseline;   */          /* 以文字的基线对齐 */
+            /* align-content: stretch;  */          /* 这个是针对整个盒子，也就是多行，当侧轴有空白的时候设置伸缩对齐方式 */     
+            /* align-content: flex-end;
+            align-content: flex-start;
+            align-content: center;；
+            align-content: space-between;
+            align-content: space-around;    */ 
+        } 
+        .son:nth-of-type(3){
+            /* 弹性子元素属性 */
+            /* order: -1; */                        /* 控制子元素的的顺序，默认情况下为0 从小到大排列 */
+            /* flex-grow: 1; */             /* 默认0，子元素的扩展大小 */
+            /* 子元素的占用 = 全部剩余空间 / 所有子元素的flex-grow的值 * 当前子元素的flex-grow */
+            /* flex-shrink: 0; */           /* 设置收缩的比率，默认都要收缩 1，如果为0，则不收缩，而他的收缩量分配给别的 */
+            /* 子元素的收缩 = 全部超出空间 / 所有子元素的flex-shrink * 当前子元素的flex-shrink */
+            /* align-self: center; */               /* 允许独立的子元素覆盖默认的对齐设置 align-items */
+        }
+    </style>
+</head>
+<body>
+    <div class='father'>
+        <div class='son'>1</div>
+        <div class='son'>2</div>
+        <div class='son'>3</div>
+        <div class='son'>1</div>
+        <div class='son'>2</div>
+        <div class='son'>3</div>
+        <div class='son'>1</div>
+        <div class='son'>2</div>
+        <div class='son'>3</div>
+    </div>
+</body>
+</html>

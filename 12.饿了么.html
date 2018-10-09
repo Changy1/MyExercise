@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,body,.app{
+            height: 100%;
+        }
+        .app{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header{width: 100%; height: 45px; background: -webkit-linear-gradient(90deg,#0af,#0085ff);}
+        .footer{width: 100%; height: 55px; background: #fff; box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);}
+        .content{
+            background: #f7f7f7; flex: 1 0 auto;
+        }
+        .header, .footer {
+            flex: 0 0 auto;
+        }
+        .content-top{
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content-items{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-img{
+            width: 50px;
+        }
+        .content-title{
+            font-size: 12px;
+        }
+        .footer i { display: block; width: 30px; height: 30px; background: #ccc; }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+        }
+        .footer span{
+            font-size: 13px;
+        }
+        .footer a{display: flex; flex-direction: column; align-items: center;}
+    </style>
+</head>
+<body>
+    <div class='app'>
+        <header class='header'>
+        </header>
+        <div class='content'>
+            <div class='content-top'>
+                <div class='content-items'>
+                    <div class="content-img">
+                        <img width="100%" src="https://fuss10.elemecdn.com/7/d8/a867c870b22bc74c87c348b75528djpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                    </div>
+                    <div class="content-title">美食</div>
+                </div>
+            </div>
+        </div>
+        <footer class='footer'>
+             <a>
+                <i></i>
+                <span>哈哈</span>
+            </a>
+            <a>
+                <i></i>
+                <span>哈哈</span>
+            </a>
+            <a>
+                <i></i>
+                <span>哈哈</span>
+            </a>
+            <a>
+                <i></i>
+                <span>哈哈</span>
+            </a>
+        </footer>
+    </div>
+</body>
+<script>
+    (function(){
+        let top = document.querySelector('.content-top');
+        let str = '';
+        for( var i=0; i<10 ; i++){
+            str+= `<div class='content-items'>
+                    <div class="content-img">
+                        <img width="100%" src="https://fuss10.elemecdn.com/7/d8/a867c870b22bc74c87c348b75528djpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                    </div>
+                    <div class="content-title">美食</div>
+                </div>`
+        }
+        top.innerHTML = str;
+    })()
+</script>
+</html>
